@@ -52,4 +52,4 @@ CREATE TABLE IF NOT EXISTS zipkin_dependencies (
 );
 
 ALTER TABLE zipkin_dependencies ADD UNIQUE (day, parent, child);
-ROLLBACK;
+COMMIT;
